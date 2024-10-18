@@ -1,0 +1,11 @@
+folium==0.17.0
+streamlit==1.37.1
+streamlit_folium==0.22.1
+pandas==2.2.2
+pillow==10.4.0
+beautifulsoup4==4.12.3
+pycountry==24.6.1
+geopy==2.4.1
+scholarly==1.7.11
+tqdm==4.66.5
+requests==2.32.3
