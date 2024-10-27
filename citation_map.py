@@ -207,7 +207,7 @@ def create_map(coordinates_and_info: List[Tuple[str]], pin_colorful: bool = True
                 author_name, _, _, _, lat, lon, _, _, _, _  = coordinates_and_info[entry_idx]
                 author_name_list.append(author_name)
             folium.Marker([lat, lon], popup='%s (%s)' % (affiliation_name, ' & '.join(author_name_list)),
-                          icon=folium.Icon(color=color)).add_to(citation_map)
+                          icon=folium.Icon(color=color,icon="circle", prefix="fa")).add_to(citation_map)
     else:
         for affiliation_name in affiliation_map:
             corresponding_entries = affiliation_map[affiliation_name]
